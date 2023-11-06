@@ -2,4 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+.nav-menu {
+  width: calc(100% - 32px);
+}
+.hero-section {
+  background: url("../public/desktop/image-header.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 450px) {
+    .hero-section {
+        background: url("../public/mobile/image-header.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }   
+}
+
+@media (min-width: 640px) {
+  .md\:bg-image-large {
+    background-image: url('../public/desktop/image-graphic-design.jpg');
+  }
+  .md\:bg-image-large-1 {
+    background-image: url('../public/desktop/image-photography.jpg');
+  }
+}
+
+@media (max-width: 639px) {
+  .sm\:bg-image-small {
+    background-image: url('../public/mobile/image-graphic-design.jpg');
+  }
+  .sm\:bg-image-small-1 {
+    background-image: url('../public/mobile/image-photography.jpg');
+  }
+}
+
+
 
